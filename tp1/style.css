@@ -166,3 +166,62 @@ footer {
     font-size: 1rem;
   }
 }
+
+.contenedor-boton-volver {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.boton-volver {
+  display: inline-block;
+  background-color: #fdd835;
+  color: #121212;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+.boton-volver:hover {
+  background-color: #ffea00;
+  color: #000;
+}
+
+.contenedor-trivia {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.contenedor-trivia h1 {
+  color: #fdd835;
+  margin-bottom: 1rem;
+}
+
+.contenedor-trivia p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.opcion-trivia {
+  display: block;
+  background-color: #fdd835;
+  color: #121212;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin: 0.5rem auto;
+  max-width: 300px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.opcion-trivia:hover {
+  background-color: #ffea00;
+  color: #000;
+}
