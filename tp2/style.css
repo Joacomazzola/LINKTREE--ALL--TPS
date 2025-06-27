@@ -201,8 +201,6 @@ footer {
   text-align: justify;
 }
 
-/* 📱 Responsive */
-
 @media (max-width: 768px) {
   .navegacion .menu-nav {
     flex-direction: column;
