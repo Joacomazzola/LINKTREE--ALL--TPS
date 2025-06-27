@@ -51,6 +51,7 @@ header {
 .enlace-nav:hover,
 .enlace-nav.activo {
   color: #ffea00;
+  text-decoration: underline;
 }
 
 .hero {
