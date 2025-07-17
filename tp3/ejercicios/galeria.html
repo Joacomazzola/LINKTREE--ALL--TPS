@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Galería de Imágenes</title>
-  <link rel="stylesheet" href="../style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 </head>
 <body>
   <header>
-    <a href="../index.html" class="logo-nav">Mi Portfolio</a>
+    <a href="../index.html" class="logo-nav">ENTRADANC3</a>
     <nav class="navegacion">
       <ul class="menu-nav">
         <li><a href="../index.html" class="enlace-nav">Inicio</a></li>
@@ -16,17 +17,38 @@
       </ul>
     </nav>
   </header>
+
   <main class="contenedor-flex">
     <h2 class="titulo-seccion">Galería</h2>
-    <div id="galeria" class="cuadricula-blog">
-      <img src="../img/imagen1.jpg" alt="Imagen 1" class="imagen-post">
-      <img src="../img/imagen2.jpg" alt="Imagen 2" class="imagen-post">
-      <img src="../img/imagen3.jpg" alt="Imagen 3" class="imagen-post">
-    </div>
+    <section class="galeria">
+      <a href="../img/Artbat.jpeg" class="imagen-galeria glightbox" data-gallery="galeria" data-title="Este 01 de noviembre llega el duo ucraniano para regalarnos otra noche increible. Esta vez, en Parque Sarmiento.">
+        <img src="../img/Artbat.jpeg" alt="Artbat" />
+      </a>
+      <a href="../img/Kolombo (1).jpeg" class="imagen-galeria glightbox" data-gallery="galeria" data-title="LLega el fin de semana del día del amigo y que mejor plan que ir a escuchar a Kolombo a Río Electronic Music????">
+        <img src="../img/Kolombo (1).jpeg" alt="Kolombo" />
+      </a>
+      <a href="../img/Layton.jpeg" class="imagen-galeria glightbox" data-gallery="galeria" data-title="Si queres escuchar un poco de buena musica te invito a escuchar a Layton Giordani en Oasis Club el 27 de septiembre. Te veo ahí?">
+        <img src="../img/Layton.jpeg" alt="Layton" />
+      </a>
+    </section>
   </main>
-  <script src="../js/galeria.js"></script>
-  <footer>
-    <p>&copy; 2025 - Mi Portfolio</p>
-  </footer>
+
+ <footer>
+  <p>&copy; 2025 - Mi Portfolio</p>
+  <div class="instagram-links">
+    <a href="https://www.instagram.com/entradanc3" target="_blank" rel="noopener noreferrer">EntraDanc3</a>
+    <a href="https://www.instagram.com/joacomazzola" target="_blank" rel="noopener noreferrer">Joacomazzola</a>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true
+    });
+  </script>
 </body>
 </html>
